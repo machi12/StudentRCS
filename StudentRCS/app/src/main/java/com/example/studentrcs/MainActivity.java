@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button login;
 
+    //private Button register;
+
     private static final String TAG = "MainActivity";
 
     @Override
@@ -73,26 +75,18 @@ public class MainActivity extends AppCompatActivity {
                 }
                 cursor.close();
 
-//                while(cursor.moveToFirst()){
-//                    String db_sid = cursor.getString(cursor.getColumnIndex("sid"));
-//                    if(sid.equals(db_sid)){
-//                        Intent intent = new Intent(MainActivity.this, IndexActivity.class);
-//                        intent.putExtra("sid", sid);
-//                        startActivity(intent);
-//                    }
-//                    else{
-//                        Toast.makeText(MainActivity.this, "账号或密码错误", Toast.LENGTH_SHORT);
-//                    }
-//                }
-
-//                if(cursor != null){
-//                    Intent intent = new Intent(MainActivity.this, IndexActivity.class);
-//                    intent.putExtra("sid", sid);
-//                    Log.d("Machi", sid + "");
-//                    startActivity(intent);
-//                }
             }
         });
+
+//        //对注册按钮进行监听
+//        register = (Button)findViewById(R.id.register);
+//        register.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
 //        src = R.drawable.one;

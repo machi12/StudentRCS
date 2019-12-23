@@ -10,20 +10,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".IndexActivity"></activity>
+        <activity android:name=".IndexActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <provider
-            android:authorities="com.example.studentrcs.contentprovider.MyDatabaseProvider"
             android:name=".contentprovider.MyDatabaseProvider"
+            android:authorities="com.example.studentrcs.contentprovider.MyDatabaseProvider"
             android:enabled="true"
-            android:exported="true"/>
-
+            android:exported="true" />
     </application>
 
 </manifest>
